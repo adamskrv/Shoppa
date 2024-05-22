@@ -1,1 +1,1 @@
-*A shopping list application built with NextJs 14*
+*A shopping list application built with nextjs 14*
