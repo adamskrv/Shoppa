@@ -24,6 +24,15 @@ const HomePage = () => {
   const [priceInputValue, setPriceInputValue] = useState("");
 
   const handleAddBtnClick = () => {
+     if (
+       !inputValue.trim() ||
+       !priceInputValue.trim() ||
+       isNaN(parseFloat(priceInputValue)) ||
+       parseFloat(priceInputValue) <= 0
+     ) {
+       // If input value or price input value is empty, or price is not a valid number, do nothing
+       return;
+     }
     const newItemValue = {
       id: newItems.length ? newItems[newItems.length - 1].id + 1 : 1,
       itemName: inputValue,
