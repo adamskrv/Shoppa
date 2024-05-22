@@ -9,17 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// function debounce<T extends (...args: any[]) => void>(
-//   func: T,
-//   delay: number
-// ): (...args: Parameters<T>) => void {
-//   let timer: ReturnType<typeof setTimeout>;
-//   return function (...args: Parameters<T>) {
-//     clearTimeout(timer);
-//     timer = setTimeout(() => func(...args), delay);
-//   };
-// }
-
 const HomePage = () => {
   const [newItems, setNewItems] = useState([
     {
@@ -105,14 +94,14 @@ const HomePage = () => {
           Create your shopping list 🛒
         </h3>
         <div className="flex items-center justify-between shadow-lg w-full px-5">
-          <input
+          <input required
             className="p-2 gap-5 rounded w-full"
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Add an Item"
           />
-          <input
+          <input required
             className="p-2 ml-4 gap-5 rounded w-full max-w-sm"
             type="number"
             min={50}
