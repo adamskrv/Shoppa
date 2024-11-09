@@ -2,6 +2,7 @@ import Image from "next/image";
 import HomePage from "./components/home/home_page";
 import NavBar from "./components/nav/nav_bar";
 import React from "react";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           width={500}
         />
       </div>
+      <Footer />
     </main>
   );
 }
