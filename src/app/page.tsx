@@ -15,7 +15,7 @@ export default function Home() {
           <HomePage />
         </React.StrictMode>
       </div>
-      <div className="absolute bottom-5 right-5">
+      <div className="absolute hidden md:block bottom-5 right-5">
         <Image
           src={"/images/pic1.png"}
           alt="bg image"
@@ -23,7 +23,7 @@ export default function Home() {
           width={500}
         />
       </div>
-      <div className="absolute left-5 top-20">
+      <div className="absolute hidden md:block left-5 top-20">
         <Image
           src={"/images/pic2.png"}
           alt="bg image"
