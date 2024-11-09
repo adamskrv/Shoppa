@@ -110,7 +110,7 @@ const HomePage = () => {
         <div className="flex flex-col md:flex-row gap-2 justify-center items-center md:justify-between shadow-md w-full px-5 pb-4">
           <input
             required
-            className="text-[24px] p-2 gap-5 rounded-md w-full border-[1px] border-gray-500 bg-transparent"
+            className="text-sm md:text-[24px] p-2 gap-5 rounded-md w-full border-[1px] border-gray-500 bg-transparent"
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
@@ -118,7 +118,7 @@ const HomePage = () => {
           />
           <input
             required
-            className="text-[24px] p-2 md:ml-4 gap-5 rounded w-full max-w-sm border-[1px] border-gray-500 bg-transparent"
+            className="text-sm md:text-[24px] p-2 md:ml-4 gap-5 rounded w-full max-w-sm border-[1px] border-gray-500 bg-transparent"
             type="number"
             min={50}
             max={100000}
